@@ -1,0 +1,107 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.producto{
+    border: 1px solid rgb(151, 46, 114);
+    border-radius: 8px;
+    overflow: hidden;
+    
+    h3, p{
+        padding: 14px;
+        text-align: center;
+        
+    }
+    
+
+}
+
+#productos-container {
+    img{
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+    ul{
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fil(minmax(100px)), 1fr);
+        
+        padding-left: 0;
+        margin-top: 10px;
+        gap: 20px;
+        list-style: none;
+     
+        
+    
+    }
+
+    button{
+        border-radius: 5px;
+        text-align: center;
+        
+        
+    }
+}
+
+
+@media only screen and (min-width:1023px){
+/* header */
+    header{
+        h1{
+            display: flex;
+            margin-left: 160px;
+        }
+    }
+
+    /* //media query - Card-Container */
+    .card-container{
+        width: 100%;
+        justify-content: space-between;
+
+        ul{
+            display: grid;
+            
+            justify-content: center;
+        }
+    }
+}
+
+
+/* Icono del carrito */
+.carrito-icono {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #bb2525;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+  
+} */
+
+/* Contador de productos en el carrito */
+#carrito-count {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Sección emergente del carrito */
+#carrito-seccion {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    width: 300px;
+    max-height: 400px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    display: none; /* Oculto por defecto */
+}
